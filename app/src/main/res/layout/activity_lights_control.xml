@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LightsControlActivity">
+    tools:context="com.moringaschool.bluetooth_hc06.LightsControlActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/buttonstyles"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Control the lights using below buttons " />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:text="On#Room 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonstyles"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:text="Off#Room 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonstyles"
+        android:layout_marginRight="70dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:text="On#Room 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonstyles"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:text="Off#Room 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonstyles"
+        android:layout_marginRight="70dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="153dp"
+        android:background="@drawable/buttonstyles"
+        android:text="UnPair" />
+</RelativeLayout>
